@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="box와 padding, margin 개념이해" />
+  <title>box model</title>
+  <style>
+    body,
+    html {
+      padding: 40px;
+      margin: 0;
+      background-color: cornflowerblue;
+      height: 100%;
+      padding: 40px 30px 20px 10px;
+    }
+
+    .box {
+      background-color: chartreuse;
+      width: 50%;
+      height: 50%;
+      padding: 20px;
+      margin: 50px;
+      border-style: dashed;
+      border-width: 3px;
+      border-color: dimgrey;
+    }
+
+    .inside-box {
+      background-color: darkgray;
+      width: 50%;
+      height: 50%;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 3px;
+      margin: 40px 30px 20px 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="inside-box"></div>
+  </div>
+</body>
