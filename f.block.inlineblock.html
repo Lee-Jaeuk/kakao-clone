@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Block과 Inline block</title>
+  <meta name="description" content="Block과 Inline Block의 차이점을 파악한다" />
+  <meta
+    name="keword type"
+    content="style, .box, div.box*3, display:inline-block;"
+  />
+  <meta name="author" content="이재욱" />
+  <link href="d.style.css" rel="stylesheet" />
+
+  <style>
+    .box {
+      background-color: burlywood;
+      width: 200px;
+      height: 200px;
+      border: 2px dashed black;
+      display: inline-block;
+      margin-top: 100px;
+    }
+    .inside-box {
+      background-color: blue;
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      display: block;
+      margin: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="inside-box">
+      <h2 align="center">
+        <font color="white">
+          <b>첫번째 상자</b>
+        </font>
+      </h2>
+    </div>
+  </div>
+  <div class="box">
+    <div class="inside-box">
+      <p align="center">
+        <font color="yellow"> <b>두번째 상자</b></font>
+      </p>
+    </div>
+  </div>
+  <div class="box"></div>
+  <div class="inside-box">
+    <p align="center" color="green">
+      <font color="green"> 세번째 상자</font>
+    </p>
+  </div>
+</body>
