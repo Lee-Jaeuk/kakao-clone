@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Flex Tag 실습</title>
+  <meta name="description" content="father box와 flex tag" />
+  <meta
+    name="keword type"
+    content="justify-content, align-items, flex-direction, row-reverse, space-between"
+  />
+  <meta name="author" content="이재욱" />
+  <link href="d.style.css" rel="stylesheet" />
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      margin: 0px;
+    }
+    .fatherBox {
+      height: 100%;
+      width: 100%;
+      background-color: rgb(160, 241, 85);
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    .childBox {
+      height: 500px;
+      width: 500px;
+      background-color: hotpink;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      flex-direction: column-reverse;
+    }
+    .grandChildBox {
+      height: 50px;
+      width: 50px;
+      background-color: rgba(172, 176, 235, 0.897);
+      border: 0.5px solid white;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Box 정렬 마스터 하기</h1>
+  <div class="fatherBox">
+    <div class="childBox">
+      <div class="grandChildBox">1</div>
+      <div class="grandChildBox">2</div>
+      <div class="grandChildBox">3</div>
+      <div class="grandChildBox">4</div>
+      <div class="grandChildBox">5</div>
+      <div class="grandChildBox">6</div>
+      <div class="grandChildBox">7</div>
+      <div class="grandChildBox">8</div>
+      <div class="grandChildBox">9</div>
+    </div>
+  </div>
+</body>
