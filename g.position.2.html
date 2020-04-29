@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Position 실습</title>
+  <meta name="description" content="Position의 각 속성 이해하기" />
+  <meta name="keword type" content="static, fixed, relative, absolute" />
+  <meta name="author" content="이재욱" />
+  <link href="d.style.css" rel="stylesheet" />
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      background-color: red;
+      margin: 0%;
+    }
+    .boxOne {
+      height: 300px;
+      width: 300px;
+      background-color: yellow;
+      position: static;
+      margin-top: 20px;
+    }
+    .boxTwo {
+      height: 300px;
+      width: 300px;
+      background-color: green;
+      position: relative;
+      left: 300px;
+    }
+    .boxThree {
+      height: 100px;
+      width: 100px;
+      background-color: blue;
+      position: absolute;
+      left: 100px;
+    }
+    .boxFour {
+      height: 300px;
+      width: 300px;
+      background-color: white;
+      position: fixed;
+      right: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Position 실습</h1>
+  <div class="boxOne"></div>
+  <div class="boxTwo"><div class="boxThree"></div></div>
+  <div class="boxFour"></div>
+</body>
