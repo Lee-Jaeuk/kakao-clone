@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>nth-child(2n+1)외</title>
+  <meta name="description" content="속성별 서식적용하기 " />
+  <meta name="keword type" content="input[required="required"], .container>.box,
+  nth-child" />
+  <meta name="author" content="이재욱" />
+  <link href="d.style.css" rel="stylesheet" />
+
+  <style>
+    input[required="required"] {
+      background-color: brown;
+    }
+
+    .container > .box {
+      background-color: black;
+    }
+    .box {
+      background-color: green;
+      display: block;
+      height: 100px;
+      border: 1px solid black;
+    }
+    .box:nth-child(3n) {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+
+  <input type="password" required="required" />
+  <input type="required" />
+  <input type="submit" />
+</body>
