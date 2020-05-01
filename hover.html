@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="html에서 hover, active, focus 속성 이해"
+    <meta
+    name="keyword"
+    content=".textarea: hover{}, active{}, focus{}"
+  />
+  <meta name="author" content="이재욱" />
+  <title>하이라이트 강조기능</title>
+  <link href="d.style.css" rel="stylesheet" />
+
+  <style>
+    .box1:hover {
+      background-color: rgb(245, 99, 221);
+    }
+    .box2:active {
+      background-color: blue;
+    }
+    .box2 {
+      width: 150px;
+      height: 50px;
+      border: 1px solid black;
+    }
+    .box3:focus {
+      background-color: green;
+      border: 2px dashed yellow;
+    }
+    .box4:hover {
+      background-color: rgb(220, 231, 64);
+    }
+  </style>
+</head>
+
+<body>
+  <h2>hover 기능</h2>
+  <span class="box1">커서 갖다대면 색이 변해요</span>
+  <h2>active 기능</h2>
+  <span class="box2">클릭하면 색이 변해요</span>
+  <h2>focus 기능</h2>
+  <textarea class="box3">기타 의견있을시 적어주세요.</textarea>
+  <input class="box4" type="submit" />
+</body>
