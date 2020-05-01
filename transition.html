@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="html에서 transition 이해"
+    <meta
+    name="keyword"
+    content="transition: color 0.5s ease-in-out"
+  />
+  <meta name="author" content="이재욱" />
+  <title>Transition 활용한 하이라이트 강조기능</title>
+  <link href="d.style.css" rel="stylesheet" />
+
+  <style>
+
+.box1 {
+    background-color: green;
+    color:white;
+transition:all 1s ease-in-out;
+}
+
+.box1:hover {
+      background-color: rgb(245, 99, 221);
+      color:black;
+    }
+    .box2 {
+      width: 150px;
+      height: 50px;
+      background-color: chartreuse;
+      color:black;
+      transition:all .5s ease-in-out;
+    }
+    .box2:active {
+      background-color: blue;
+      color:white;
+    }
+
+    .box3:hover {
+      background-color: rgb(220, 231, 64);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>hover transition 기능</h1>
+  <span class="box1">커서 갖다대면 배경과 글자색이 반짝거려요</span>
+  <h1>focus transition 기능</h1>
+  <span class="box2">클릭하면 배경과 글자색이 반짝거려요</textarea>
+  <input class="box3" type="submit" />
+</body>
