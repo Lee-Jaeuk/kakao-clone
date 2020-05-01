@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="html에서 transfomation 이해"
+    <meta
+    name="keyword"
+    content="transform"
+  />
+  <meta name="author" content="이재욱" />
+  <title>Transform을 활용한 박스 비틀기</title>
+  <!--도움이 되는 링크: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-->
+
+  <style>
+    .box1 {
+      background-color: green;
+      color: white;
+      width: 200px;
+      height: 200px;
+      transition: transform 3s ease-in-out;
+    }
+    .box1:hover {
+      transform: rotate(1turn) scale(0.5, 0.5);
+    }
+
+    .box2 {
+      background-color: black;
+      color: white;
+      width: 150px;
+      height: 150px;
+      transition: transform 2s ease-in-out;
+    }
+    .box2:hover {
+      transform: translate3d(40px, 100%, 3em) scale(1.5, 1.5);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">박스가 한바퀴 돌면서 작아져요</div>
+  <div class="box2">새로운 효과!</div>
+</body>
