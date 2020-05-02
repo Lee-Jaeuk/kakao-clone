@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UFT-8" />
+  <meta
+    name="description"
+    content="html에서 animation 활용"
+    <meta
+    name="keyword"
+    content="animation, @keyframes"
+  />
+  <meta name="author" content="이재욱" />
+  <title>애니메이션 사용</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      background-color: ivory;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      height: 500px;
+      background-color: green;
+      color: yellow;
+      animation: 5s ease-in-out infinite rotateNscaled;
+    }
+    @keyframes rotateNscaled {
+      0% {
+        transform: none;
+      }
+      50% {
+        transform: rotate(1turn) scale(1.5, 1.5);
+        color: white;
+        background-color: mediumblue;
+      }
+      100% {
+        transform: none;
+      }
+    }
+
+    .innerbox {
+      width: 150px;
+      height: 150px;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: 5s infinite anticlockwise ease-in-out;
+    }
+    @keyframes anticlockwise {
+      0% {
+        transform: none;
+      }
+      50% {
+        transform: scale(2, 2) rotate(-360deg);
+        color: red;
+        background-color: white;
+      }
+      100% {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="innerbox"><h1>안녕!</h1>
+</div>
+</body>
