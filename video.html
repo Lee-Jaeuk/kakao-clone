@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UFT-8" />
+  <meta
+    name="description"
+    content="html과 css활용한 이미지, 비디오 넣기"
+    <meta
+    name="keyword"
+    content="source src, img src, type"
+  />
+  <meta name="author" content="이재욱" />
+  <title>비디오와 이미지 삽입</title>
+
+  <style>
+    .james {
+      animation: ease-in-out 1.5s infinite rounding;
+    }
+    @keyframes rounding {
+      0% {
+        transform: none;
+      }
+
+      100% {
+        transform: translateX(300px) translateY(300px) rotate(1turn)
+          scale(0.01, 0.01);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <img
+    class="james"
+    src="goodmorning.jpg"
+    width="300"
+    height="300"
+    alt="goodmorning"
+  />
+  <video width="640" height="480" controls>
+    <source src="sanfrancisco.mp4" type="video/mp4" />
+  </video>
+</body>
